@@ -1,0 +1,23 @@
+{
+  "name": "beefy-transform-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "beefy --live index.coffee"
+  },
+  "author": "David Guttman",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "beefy": "~0.7.1",
+    "browserify": "~3.20.0",
+    "coffeeify": "~0.5.2"
+  },
+  "browser": "index.coffee",
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
+  }
+}
